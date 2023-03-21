@@ -1,0 +1,94 @@
+.bg-warning{
+    background-color: rgb(243, 164, 18) !important;
+}
+.text-warning{
+    color: rgb(243, 164, 18); 
+}
+
+.bg-black{
+    background-color: black;
+}
+.text-blue{
+    color:rgb(25, 25, 206);
+}
+#stats-test{
+    background-color: #000000bd;
+}
+
+.fs-20{
+    font-size: 22px;
+}
+
+.bg-dark{
+    background-color: rgba(0, 0, 0, 0.808) !important;
+}
+
+.icon{
+    width: 50px;
+    height: fit-cover;
+    background-color: white;
+}
+
+i{
+    display: block !important;
+    font-size: 60px;
+    width: fit-content;
+}
+
+body{
+    background-image:  url("../img/img/main.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ------------------------------------- */
+
+.gallery{
+    height: 250px !important;
+    background-size: cover;
+}
+
+.gallery-1{
+    background-image: url("../img/gallery/gallery2.jpg");
+}
+.gallery-2{
+    background-image: url("../img/gallery/gallery1.jpg");
+}
+.gallery-3{
+    background-image: url("../img/gallery/gallery3.jpg");
+}
+.gallery-4{
+    background-image: url("../img/gallery/gallery5.jpg");
+}
+.gallery-5{
+    background-image: url("../img/gallery/gallery4.jpg");
+}
+.gallery-6{
+    background-image: url("../img/gallery/gallery3.jpg");
+}
+
+.gallery h2{
+    top: 20%;
+    width: 100%;
+}
+
+.gallery i{
+    font-size: 30px;
+}
+
+.contenu-lr{
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 0;
+    transition: all 500ms;
+}
+.text-black{
+    color: black !important;
+}
+.contenu-lr i:hover{
+    background-color: #fff !important;
+    transition: all 500ms;
+    color: black !important;
+    cursor: pointer;
+}
+

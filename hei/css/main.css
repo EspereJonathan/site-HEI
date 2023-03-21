@@ -1,0 +1,207 @@
+/* start reset */
+@font-face {
+    font-family: myFont;
+    src: url("../../asserts/font/fa-brands-400.ttf");
+}
+html{scroll-behavior: smooth;}
+*{list-style: none;}
+.bg-black{background:black;}
+.text-black{color: #000;}
+.bg-mutedd{background-color: rgba(0, 0, 0, 0.808);}
+.bg-muted{background-color: #151515;}
+.bg-perso3{background-color: #151515;}
+/* end reset */
+/* -------------------------------------------------- */
+/* start navbar */
+nav{
+    transition: all 500ms;
+    z-index: 99999999 !important;
+}
+nav i{font-size: 25px;}
+nav img{width:70px;height:50px;}
+.navbar-back{
+    background-color: rgba(0, 0, 0, 0.705);
+    backdrop-filter: blur(2px);
+    width: 100vw;
+    height: 100vh !important;
+    z-index: 9999999999999;
+    top:0;
+    left:0;
+}
+.navbar-menu{
+    z-index: 999999999999999;
+    height: 100vh;
+    max-width: 350px;
+    position: fixed;
+    top:0px;
+    left:-100%;
+    width: 100% !important;
+    transition: all 200ms linear;
+}
+.showSlide{left: 0px;}
+/* end navbar */
+/* ------------------------------------------------- */
+/* start of header */
+.slide-element {background-color: rgba(0, 0, 0, 0.432);}
+.slide-1 {background-image: url("../img/imagesHEI/slider-image3.jpg");}
+.slide-2 {background-image: url("../img/imagesHEI/slider-image2.jpg");}
+/*.slide-3 {background-image: url("../img/Journéed_intégration/lol.jpg");}*/
+.slide-element p {font-size: 18px;}
+header .carousel-item{background-size: cover;}
+.slide-element button {padding: 10px 20px !important; transition: all 500ms;}
+/* end of header */
+/* ------------------------------------------------- */
+/* start of featuring */
+.featuring-contenu {background-color: whitesmoke;}
+.featuring-contenu span i {font-size: 50px;}
+.featuring-contenu div {z-index: 9999; transition: all 700ms;}
+.featuring-contenu::after {
+    content: "";
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    transition: all 700ms;
+    background-color: rgb(206, 137, 9);
+}
+.featuring-contenu:hover::after {width: 100%;left: 0;}
+.featuring-contenu:hover div {color: white;}
+/* end of featuring */
+/* ------------------------------------------------- */
+/* start of pricing */
+#pricing img{width:250px; height:200px}
+#pricing i{font-size:20px;}
+.pricing-tag{border-radius: 50px;}
+.pricing-tag-child{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+/* end pricing */
+/* ------------------------------------------------- */
+/* start pricing */
+.gallery {height: 250px !important;background-size: 100% 100%;}
+.gallery-1 {background-image: url("../img/gallery2.jpg");}
+.gallery-2 {background-image: url("../img/gallery1.jpg");}
+.gallery-3 {background-image: url("../img/gallery3.jpg");}
+.gallery-4 {background-image: url("../img/gallery4.jpg");}
+.gallery-5 {background-image: url("../img/gallery5.jpg");}
+.gallery-6 {background-image: url("../img/gallery6.jpg");}
+.gallery-7 {background-image: url("../img/gallery7.jpg");}
+.gallery-8 {background-image: url("../img/gallery8.jpg");}
+.gallery-9 {background-image: url("../img/gallery9.jpg");}
+.gallery h2 {top: 20%;width: 100%;}
+.gallery i {font-size: 30px;}
+.contenu-lr {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 0;
+    transition: all 500ms;
+}
+.contenu-lr i:hover {
+    background-color: #fff;
+    transition: all 500ms;
+    color: black !important;
+    cursor: pointer;
+}
+/* end of our works */
+/* ------------------------------------------------- */
+/* start team */
+.director {background-image: linear-gradient(to bottom, rgb(126, 85, 8), rgb(223, 150, 15));}
+.director-img img {
+    display: block;
+    width: 300px !important;
+    height: 300px !important;
+}
+.director i{font-size: 50px}
+.bg-perso {background-color: #7a580ed2;}
+.skill{background-color: rgb(189, 123, 2);}
+.skill80 {width: 80%;}
+.skill90 {width: 90%;}
+.skill99 {width: 99%;}
+.skill95 {width: 95%;}
+.last-info span i {font-size: 35px;}
+#team img {
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.bg-perso2 {background-color: #d18c04;}
+/* end team */
+
+/* start student testimoniales */
+.carousel-contenu::after {
+    content: "";
+    display: block;
+    transform: rotate(20deg);
+    border: 2px solid rgb(206, 137, 9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+.carousel-contenu {z-index: 99;}
+.carousel-contenu img {
+    width: 150px;
+    height: 150px;
+    border-top: 5px solid rgb(206, 137, 9);
+    border-left: 5px solid rgb(206, 137, 9);
+    border-bottom: 5px solid rgb(0, 0, 0);
+    border-right: 5px solid rgb(0, 0, 0);
+}
+.carousel-contenu img,
+.carousel-contenu h2,
+.carousel-contenu p,
+.carousel-contenu span {z-index: 99 !important;}
+#pricingBe .carousel-inner {padding: 65px 50px !important;}
+@media screen and (max-width:570px){
+    .carousel-contenu::after{
+        display: none;
+    }
+}
+.stat i{font-size:50px;}
+/* end of testimoniales */
+
+/* start of contact */
+#contact div iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+#contact p {
+    color: rgba(0, 0, 0, 0.726);
+}
+input {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    outline: none;
+    width: 49%;
+}
+textarea {
+    resize: none;
+    width: 100%;
+    display: block;
+    height: 150px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+}
+/* end of contact */
+/* footer */
+footer {
+    font-size: 14px;
+    background: #151515;
+}
+footer img {
+    display: block;
+    width: 90%;
+    height: 150px;
+    margin: 0px;
+}
+footer i {font-size: 20px;}
+footer a {transition: all 300ms;}
+ul li a:hover {
+    color: #d18c04 !important;
+    text-decoration: none;
+}

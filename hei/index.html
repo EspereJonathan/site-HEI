@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEI</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="../asserts/bootstrap-4.6.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../asserts/fontawesome-free-6.2.1-web/css/all.min.css">
+    <script src="../asserts/jquery-3.6.3.min.js" defer></script>
+    <script src="../asserts/bootstrap-4.6.2-dist/js/bootstrap.js" defer></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/index.js" defer></script>
+    <script src="js/jqueryMain.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+    <div class="navbar p-0">
+        <nav class="container-md container-fluid fixed-top py-0 mx-auto text-white">
+            <button class="btn btn-menu" type="button">
+                <i class="fa-solid fa-bars text-white"></i>
+            </button>
+            <div class="navbar-brand">
+                <img src="img/imagesHEI/logo.png" alt="logo Hei">
+            </div>
+            <div class="navbar-item d-md-block d-none">
+                <span><i class="fab fa-facebook-f mx-2"></i></span>
+                <span><i class="fab fa-instagram mx-2"></i></span>
+                <span><i class="fab fa-twitter mx-2"></i></span>
+            </div>
+        </nav>
+        <div class="navbar-back position-fixed d-none"> 
+        </div>
+        <div class="navbar-menu bg-black py-2">
+            <button class="btn-menu btn d-block my-3 mx-auto">
+                <span><i class="fa-solid fa-close text-white"></i></span>
+            </button>
+            <ul class="text-white text-center mx-0 px-0">
+                <li class="nav-link"><a href="#" class="text-white">Acceuil</a></li>
+                <li class="nav-link"><a href="#raison" class="text-white">Avantages</a></li>
+                <li class="nav-link"><a href="#pricing" class="text-white">Frais</a></li>
+                <li class="nav-link"><a href="#works" class="text-white">Informations</a></li>
+                <li class="nav-link"><a href="#team" class="text-white">Equipe</a></li>
+                <li class="nav-link"><a href="#testimoniale" class="text-white">Témoignages</a></li>
+                <li class="nav-link"><a href="#contact" class="text-white">Emplacement</a></li>
+                <li class="nav-link"><a href="#contact" class="text-white">S'inscire</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- start header -->
+    <header class="container-fluid p-0">
+        <div id="carouselLanding" class="carousel slide carousel-fade w-100" data-ride="carousel" data-interval="7000"
+            data-pause="false">
+            <ol class="carousel-indicators wow animate__fadeInUp" data-wow-duration="3s">
+                <li data-target="#carouselLanding" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselLanding" data-slide-to="1"></li>
+                <li data-target="#carouselLanding" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active slide-1">
+                    <div class="slide-element vh-100">
+                        <div class="container h-100 d-flex align-items-start justify-content-center flex-column">
+                            <h2 class="text-white display-4 font-weight-bold wow animate__fadeInRight"
+                                data-wow-duration="2s">Bienvenue à <span class="text-warning">HEI</span></h2>
+                            <p class="text-white wow w-75 animate__fadeInRight" data-wow-duration="3s">
+                                Rejoignez une université reconnue pour sa qualité d'enseignement.
+                            </p>
+                            <button class="p-2 btn btn-started btn-warning font-weight-bold text-white wow animate__fadeIn" data-wow-duration="4s">Get
+                                Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item slide-2">
+                    <div class="slide-element vh-100">
+                        <div class="container h-100 d-flex align-items-start align-items-md-center justify-content-center flex-column">
+                            <h2 class="text-white display-4 font-weight-bold wow animate__fadeInUp" data-wow-duration="2s">
+                                Professeurs <span class="text-warning">Expérimentés</span></h2>
+                            <p class="text-white wow animate__fadeInUp text-md-center" data-wow-duration="3s">
+                                Bénéficiez de l'expérience et des connaissance de nos professeurs.
+                            </p>
+                            <button class="p-2 btn btn-started btn-warning font-weight-bold text-white wow animate__fadeInUp" data-wow-duration="4s">Get
+                                Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item slide-1">
+                    <div class="slide-element vh-100">
+                        <div class="container h-100 d-flex align-items-start align-items-md-end justify-content-center flex-column p-0">
+                            <h2 class="text-white display-4 font-weight-bold wow animate__fadeInLeft"
+                                data-wow-duration="2s">Bourses <span class="text-warning">Disponibles</span></h2>
+                            <p class="text-white text-md-right wow animate__fadeInLeft w-75" data-wow-duration="2500ms">
+                                Recevez une aide financière pour vous aider à payer vos frais de scolarité
+                            </p>
+                            <button class="p-2 btn btn-started btn-warning font-weight-bold text-white wow animate__fadeIn" data-wow-duration="4s">Get
+                                Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start featuring -->
+    <section id="raison" class="conatiner-fluid container-xxl py-5 bg-white">
+        <h2 class="display-4 text-center mb-4 mt-2 wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100">
+            POURQUOI CHOISIR <span class="text-warning">HEI ?</span></h2>
+        <div class="container-fluid container-xxl mx-auto">
+            <div class="row justify-content-center row-cols-1 row-cols-md-3 row-cols-lg-4">
+                <div class="col m-1 d-flex flex-column align-items-center shadow-sm featuring-contenu py-3 px-2 wow animate__fadeInUp"
+                    data-wow-duration="2s" data-wow-offset="100">
+                    <div>
+                        <span><i class="fa-solid fa-chart-simple"></i></span>
+                    </div>
+                    <div class="text-center mt-2">
+                        <h5 class="mb-3 font-weight-bold">Bourse d'etudes</h5>
+                        <p class="text-center">
+                            " Une bourse de motivation de type aide financière accordée aux étudiants qui font preuve
+                            d'une forte motivation et d'une grande détermination à réussir dans leurs études ".
+                        </p>
+                    </div>
+                </div>
+                <div class="col m-1 d-flex flex-column align-items-center shadow-sm featuring-contenu py-3 px-2 wow animate__fadeInUp"
+                    data-wow-duration="2s" data-wow-offset="100">
+                    <div>
+                        <span><i class="fa-solid fa-laptop"></i></span>
+                    </div>
+                    <div class="text-center mt-2">
+                        <h5 class="mb-3 font-weight-bold">Alternance</h5>
+                        <p class="text-center">
+                            L'Alternance offre aux étudiant(e)s la possibilité d'acuérir une expérience 
+                            pratique dans leur domaine et d'appliquer leurs connaissances et compténces académiques dans un cadre professionnel
+                        </p>
+                    </div>
+                </div>
+                <div class="col m-1 d-flex flex-column align-items-center shadow-sm featuring-contenu py-3 px-2 wow animate__fadeInUp"
+                    data-wow-duration="2s" data-wow-offset="100">
+                    <div>
+                        <span><i class="fa-solid fa-handshake"></i></span>
+                    </div>
+                    <div class="text-center mt-2">
+                        <h5 class="mb-3 font-weight-bold">Partenariat avec Alliance Française</h5>
+                        <p class="text-center">
+                            HEI valorise la communication autant que la technique. Les cours de
+                            français sont assurés par l’Alliance Française de Madagascar".
+                        </p>
+                    </div>
+                </div>
+                <div class="col m-1 d-flex flex-column align-items-center shadow-sm featuring-contenu py-3 px-2 wow animate__fadeInUp"
+                    data-wow-duration="2s" data-wow-offset="100">
+                    <div>
+                        <span><i class="fa-solid fa-hand-holding-dollar"></i></span>
+                    </div>
+                    <div class="text-center mt-2">
+                        <h5 class="mb-3 font-weight-bold">Facilité de paiement</h5>
+                        <p class="text-center">
+                            L'écoles proposent des plans de paiment échelonné, permettant aux étudiants d'effectuer des paiments plus peitits et plus faciles à 
+                            gérer au fil du temps et les plus efficacement et à réduire le stress
+                        </p>
+                    </div>
+                </div>
+                <div class="col m-1 d-flex flex-column align-items-center shadow-sm featuring-contenu py-3 px-2 wow animate__fadeInUp"
+                    data-wow-duration="2s" data-wow-offset="100">
+                    <div>
+                        <span><i class="fa-solid fa-hand-holding-heart"></i></span>
+                    </div>
+                    <div class="text-center mt-2">
+                        <h5 class="mb-3 font-weight-bold">Une scolarité agréable et accompagnée</h5>
+                        <p class="text-center">
+                            " Nous voulons que non seulement votre formation soit
+                            qualitative, mais aussi que l’expérience vécue à l’école soit positive".
+                        </p>
+                    </div>
+                </div>
+                <div class="col m-1 d-flex flex-column align-items-center shadow-sm featuring-contenu py-3 px-2 wow animate__fadeInUp"
+                    data-wow-duration="2s" data-wow-offset="100">
+                    <div>
+                        <span><i class="fa-solid fa-school"></i></span>
+                    </div>
+                    <div class="text-center mt-2">
+                        <h5 class="mb-3 font-weight-bold">Activités para-Universitaire</h5>
+                        <p class="text-center">
+                            Elles contribuent à renforcer le sentiment d'appartenance à la communauté et à
+                            améliorer l'expérience générale des étudiants.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end featuring -->
+
+    <!-- start pricing -->
+    <section id="pricing" class="container-fluid px-3 py-5 bg-black text-white">
+        <h2 class="display-4 text-center mb-5 p-5 wow animate__fadeIn" data-wow-duration="2s" data-wow-offset="70"
+        >FRAIS DE <span class="text-warning">SCOLARITE</span></h2>
+        <div class="container mx-auto">
+            <div class="row row-cols-1 row-cols-md-12">
+                <div class="col col-12 col-md-7 col-lg-8 wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="70">
+                    <h2 class="font-weight-bold display-5 text-warning">Et c'est combien le frais de scolarité ?</h2>
+                    <p>
+                        Non seulement HEI est l'un des meilleurs université de Madagascar (si ce n'est pas le meilleur),
+                        mais il vous offre aussi une frais de scolarité abordables pour permettre à tous les étudiants d'avoir accès à une éducation de qualité. 
+                    </p>
+                    <img src="img/imagesHEI/logo.png" alt="logo de hei">
+                </div>
+                <div class="col col-12 col-md-5 col-lg-4 my-ms-3 my-md-0 pb-3 px-0 bg-white pricing-tag wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="70">
+                    <div class="px-2 mb-2 bg-warning pricing-tag-child text-white text-center">
+                        <h4 class="display-4 font-weight-bold">2 600£</h4>
+                    </div>
+                    <div class="px-3 text-black">
+                        <h4 class="font-weight-bold">Frais de scolarité</h4>
+                        <p>
+                            Rejoignez notre université et bénéficiez d'une excellente éducation à un coût abordable.
+                        </p>
+                        <ul>
+                            <li class="my-2">
+                                <span><i class="fa-solid fa-check-circle text-warning"></i></span>
+                                Bourse
+                            </li>
+                            <li class="my-2">
+                                <span><i class="fa-solid fa-check-circle text-warning"></i></span>
+                                Accès Wifi
+                            </li>
+                            <li class="my-2">
+                                <span><i class="fa-solid fa-check-circle text-warning"></i></span>
+                                Clubs
+                            </li>
+                            <li class="my-2">
+                                <span><i class="fa-solid fa-check-circle text-warning"></i></span>
+                                Accès à des logiciles de pointe
+                            </li>
+                        </ul>
+                        <button class="d-block mx-auto btn btn-warning btn-started">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end pricing -->
+
+    <!-- start works -->
+    <section id="works" class="container-fluid bg-white pb-5 mt-0">
+        <h2 class="text-black text-center display-4 mb-5 pt-5 wow animate__fadeInUp" data-wow-duration="2s"
+            data-wow-offset="100">QUELQUES <span class="text-warning">INFORMATIONS</span></h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-3 mx-md-2 shadow-sm my-2 gallery gallery-1 p-0 position-relative wow animate__fadeInUp"
+                    data-wow-duration="1s" data-wow-offset="50">
+                    <h2 class="text-white text-center position-absolute d-none">Rejoignez nous</h2>
+                    <div class="d-flex justify-content-between align-items-center h-100">
+                        <div class="h-100 p-0 m-0 d-none flex-column align-items-end justify-content-center w-0 contenu-lr">
+                            <i class="fa fa-sign-in-alt btn-started bg-black text-white rounded-circle p-2 mr-1"></i>
+                        </div>
+                        <div
+                            class="h-100 p-0 m-0 d-none flex-column align-items-start justify-content-center w-0 contenu-lr">
+                            <i class="fa fa-sign-in-alt btn-started bg-black text-white rounded-circle p-2 ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mx-md-2 shadow-sm my-2 gallery gallery-2 p-0 position-relative wow animate__fadeInUp"
+                    data-wow-duration="2s" data-wow-offset="50">
+                    <h2 class="text-white text-center position-absolute d-none">Rejoignez nous</h2>
+                    <div class="d-flex justify-content-between align-items-center h-100">
+                        <div class="h-100 p-0 m-0 d-none flex-column align-items-end justify-content-center w-0 contenu-lr">
+                            <i class="fa fa-sign-in-alt btn-started bg-black text-white rounded-circle p-2 mr-1"></i>
+                        </div>
+                        <div
+                            class="h-100 p-0 m-0 d-none flex-column align-items-start justify-content-center w-0 contenu-lr">
+                            <i class="fa fa-sign-in-alt btn-started bg-black text-white rounded-circle p-2 ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mx-md-2 shadow-sm my-2 gallery gallery-3 p-0 position-relative wow animate__fadeInUp"
+                    data-wow-duration="3s" data-wow-offset="50">
+                    <h2 class="text-white text-center position-absolute d-none">Rejoignez nous</h2>
+                    <div class="d-flex justify-content-between align-items-center h-100">
+                        <div class="h-100 p-0 m-0 d-none flex-column align-items-end justify-content-center w-0 contenu-lr">
+                            <i class="fa fa-sign-in-alt btn-started bg-black text-white rounded-circle p-2 mr-1"></i>
+                        </div>
+                        <div
+                            class="h-100 p-0 m-0 d-none flex-column align-items-start justify-content-center w-0 contenu-lr">
+                            <i class="fa fa-sign-in-alt btn-started bg-black text-white rounded-circle p-2 ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mx-md-2 shadow-sm my-2 gallery gallery-4 p-0 position-relative wow animate__fadeInUp"
+                    data-wow-duration="1s" data-wow-offset="50">
+                    <h2 class="text-white text-center position-absolute d-none">Rejoignez nous</h2>
+                    <div class="d-flex justify-content-between align-items-center h-100">
+                        <div class="h-100 p-0 m-0 d-none flex-column align-items-end justify-content-center w-0 contenu-lr">
+                            <i class="fa fa-sign-in-alt btn-started bg-black text-white rounded-circle p-2 mr-1"></i>
+                        </div>
+                        <div
+                            class="h-100 p-0 m-0 d-none flex-column align-items-start justify-content-center w-0 contenu-lr">
+                            <i class="fa fa-sign-in-alt btn-started bg-black text-white rounded-circle p-2 ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mx-md-2 shadow-sm my-2 gallery gallery-5 p-0 position-relative wow animate__fadeInUp"
+                    data-wow-duration="2s" data-wow-offset="50">
+                    <h2 class="text-white text-center position-absolute d-none">Rejoignez nous</h2>
+                    <div class="d-flex justify-content-between align-items-center h-100">
+                        <div class="h-100 p-0 m-0 d-none flex-column align-items-end justify-content-center w-0 contenu-lr">
+                            <i class="fa fa-sign-in-alt btn-started bg-black text-white rounded-circle p-2 mr-1"></i>
+                        </div>
+                        <div
+                            class="h-100 p-0 m-0 d-none flex-column align-items-start justify-content-center w-0 contenu-lr">
+                            <i class="fa fa-sign-in-alt btn-started bg-black text-white rounded-circle p-2 ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mx-md-2 shadow-sm my-2 gallery gallery-6 p-0 position-relative wow animate__fadeInUp"
+                    data-wow-duration="3s" data-wow-offset="50">
+                    <h2 class="text-white text-center position-absolute d-none">Rejoignez nous</h2>
+                    <div class="d-flex justify-content-between align-items-center h-100">
+                        <div class="h-100 p-0 m-0 d-none flex-column align-items-end justify-content-center w-0 contenu-lr">
+                            <i class="fa fa-sign-in-alt btn-started bg-black text-white rounded-circle p-2 mr-1"></i>
+                        </div>
+                        <div
+                            class="h-100 p-0 m-0 d-none flex-column align-items-start justify-content-center w-0 contenu-lr">
+                            <i class="fa fa-sign-in-alt btn-started bg-black text-white rounded-circle p-2 ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mx-md-2 shadow-sm my-2 gallery gallery-9 p-0 position-relative wow animate__fadeInUp"
+                    data-wow-duration="1s" data-wow-offset="50">
+                    <h2 class="text-white text-center position-absolute d-none">Rejoignez nous</h2>
+                    <div class="d-flex justify-content-between align-items-center h-100">
+                        <div class="h-100 p-0 m-0 d-none flex-column align-items-end justify-content-center w-0 contenu-lr">
+                            <i class="fa fa-sign-in-alt btn-started bg-black text-white rounded-circle p-2 mr-1"></i>
+                        </div>
+                        <div
+                            class="h-100 p-0 m-0 d-none flex-column align-items-start justify-content-center w-0 contenu-lr">
+                            <i class="fa fa-sign-in-alt btn-started bg-black text-white rounded-circle p-2 ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mx-md-2 shadow-sm my-2 gallery gallery-8 p-0 position-relative wow animate__fadeInUp"
+                    data-wow-duration="2s" data-wow-offset="50">
+                    <h2 class="text-white text-center position-absolute d-none">Rejoignez nous</h2>
+                    <div class="d-flex justify-content-between align-items-center h-100">
+                        <div class="h-100 p-0 m-0 d-none flex-column align-items-end justify-content-center w-0 contenu-lr">
+                            <i class="fa fa-sign-in-alt btn-started bg-black text-white rounded-circle p-2 mr-1"></i>
+                        </div>
+                        <div
+                            class="h-100 p-0 m-0 d-none flex-column align-items-start justify-content-center w-0 contenu-lr">
+                            <i class="fa fa-sign-in-alt btn-started bg-black text-white rounded-circle p-2 ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mx-md-2 shadow-sm my-2 gallery gallery-7 p-0 position-relative wow animate__fadeInUp"
+                    data-wow-duration="3s" data-wow-offset="50">
+                    <h2 class="text-white text-center position-absolute d-none">Rejoignez nous</h2>
+                    <div class="d-flex justify-content-between align-items-center h-100">
+                        <div class="h-100 p-0 m-0 d-none flex-column align-items-end justify-content-center w-0 contenu-lr">
+                            <i class="fa fa-sign-in-alt btn-started bg-black text-white rounded-circle p-2 mr-1"></i>
+                        </div>
+                        <div
+                            class="h-100 p-0 m-0 d-none flex-column align-items-start justify-content-center w-0 contenu-lr">
+                            <i class="fa fa-sign-in-alt btn-started bg-black text-white rounded-circle p-2 ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end works -->
+
+    <!-- start teams -->
+    <section id="team" class="container-fluid py-5 bg-white">
+        <h2 class="display-4 text-black text-center py-5 wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100"
+        >NOTRE <span class="text-warning">EQUIPE</span></h2>
+        <div class="container wow animate__fadeIn" data-wow-duration="3s" data-wow-offset="100">
+            <div class="row row-cols-1 row-cols-md-12 p-0">
+                <div class="col col-12 col-md-5 d-flex director py-5 flex-column align-items-center justify-content-center">
+                    <div class="director-img my-3">
+                        <img src="img/imagesHEI/oneCopie.png" alt="Our director" class="rounded-circle">
+                    </div>
+                    <div class="d-flex align-items-center text-white">
+                        <p><i class="fa-solid fa-quote-right mx-2"></i></p>
+                        <p>
+                            "Bonjour, je m'appelle Lou et je vous souhaite la bienvenue à HEI où l'excellence académique et la détermination se rejoignent".
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-7 px-5 py-2">
+                    <div>
+                        <h2 class="font-weight-bold display-5">Lou Andria</h2>
+                        <h4>Fondateur</h4>
+                        <p>
+                            Notre université s'engage à soutenir les étudiants dans leurs objectifs académique et professionnels.
+                        </p>
+                    </div>
+                    <div class="progres my-2 bg-perso">
+                        <div class="progres-bar skill90 skill p-2 text-white" role="progressbar" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100">WEB</div>
+                    </div>
+                    <div class="progres my-2 bg-perso">
+                        <div class="progres-bar skill80 skill p-2 text-white" role="progressbar" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100">PROG</div>
+                    </div>
+                    <div class="progres my-2 bg-perso">
+                        <div class="progres-bar skill99 skill p-2 text-white" role="progressbar" aria-valuenow="99"
+                            aria-valuemin="0" aria-valuemax="100">SYS</div>
+                    </div>
+                    <div class="progres my-2 bg-perso">
+                        <div class="progres-bar skill95 skill p-2 text-white" role="progressbar" aria-valuenow="95"
+                            aria-valuemin="0" aria-valuemax="100">DONNEE</div>
+                    </div>
+                    <div class="d-flex last-info mt-5">
+                        <span><i class="fab fa-twitter text-black mx-3"></i></span>
+                        <span><i class="fab fa-facebook-f text-black mx-3"></i></span>
+                        <span><i class="fab fa-instagram text-black mx-3"></i></span>
+                        <span><i class="fab fa-github text-black mx-3"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <article id="teachers" class="container-fluid wow animate__fadeIn" data-wow-duration="5s" data-wow-offset="100">
+            <h2 class="text-center my-5 py-5">QUELQUES <span class="text-warning">PROFESSEURS</span></h2>
+            <div class="row row-cols-md-2 row-cols-lg-4 row-cols-1 p-0 mx-0">
+                <div class="col d-flex flex-column align-items-center py-2 px-1 my-2 my-md-0">
+                    <div class="d-flex justify-content-end flex-column">
+                        <img src="img/imagesHEI/MrYannick.jpeg" alt="Mr Yannick" class="rounded-circle my-2">
+                    </div>
+                    <div class="py-4 bg-perso2 w-100 text-center">
+                        <h4 class="m-0 text-white">Mr Yannick</h4>
+                    </div>
+                    <div class="d-flex  text-center flex-column align-items-center">
+                        <h3>PROG</h3>
+                        <p>
+                            "Je suis passioné par mon enseignement et je m'efforce de créer une expérience d'apprentissagesignificative pour mes étudiants."
+                        </p>
+                    </div>
+                </div>
+                <div class="col d-flex flex-column align-items-center py-2 px-1 my-2 my-md-0">
+                    <div class="d-flex flex-column">
+                        <img src="img/imagesHEI/harry.png" alt="Mr Yannick" class="rounded-circle my-2">
+                    </div>
+                    <div class="py-4 bg-perso2 w-100 text-center">
+                        <h4 class="m-0 text-white">Mr Harry</h4>
+                    </div>
+                    <div class="d-flex text-center flex-column align-items-center justify-content-end">
+                        <h3>SYS</h3>
+                        <p>
+                            "Je sui fière de voir mes étudiants s'épanouir et devenir des professionnels accomplis."
+                        </p>
+                    </div>
+                </div>
+                <div class="col d-flex flex-column align-items-center py-2 px-1 my-2 my-md-0">
+                    <div class="d-flex justify-content-end flex-column">
+                        <img src="img/imagesHEI/Toky.png" alt="Mr Yannick" class="rounded-circle my-2">
+                    </div>
+                    <div class="py-4 bg-perso2 w-100 text-center">
+                        <h4 class="m-0 text-white">Mr Toky</h4>
+                    </div>
+                    <div class="d-flex  text-center flex-column align-items-center">
+                        <h3>PROG , WEB</h3>
+                        <p>
+                            "Mon objectif en tant que professeur est de faire progresser mes étudiants et de les aider à atteinde leurs objectifs académiques.""
+                        </p>
+                    </div>
+                </div>
+                <div class="col d-flex flex-column align-items-center py-2 px-1 my-2 my-md-0">
+                    <div class="d-flex flex-column">
+                        <img src="img/imagesHEI/ryan.png" alt="Mr Yannick" class="rounded-circle my-2">
+                    </div>
+                    <div class="py-4 bg-perso2 w-100 text-center">
+                        <h4 class="m-0 text-white">Mr Ryan</h4>
+                    </div>
+                    <div class="d-flex text-center flex-column align-items-center justify-content-end">
+                        <h3>PROG</h3>
+                        <p>
+                            "Je suis toujours à l'écoute de mes étudiants et je travaille en étroite collaboration avec eux pour les aider à réussir."    
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- end team -->
+    
+    <!-- start student testimoniales -->
+    <section id="testimoniale" class="container-fluid py-5 bg-black">
+        <h2 class="display-4 text-white text-center wow animate__fadeInUp" data-wow-duration="2s"  data-wow-offset="100">
+        TEMOIGNAGE <span class="text-warning">D'ETUDIANTS</span></h2>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-12 wow animate__fadeIn" data-wow-duration="2s" data-wow-offset="100">
+                <div class="col col-12 col-md-4 text-white d-flex flex-column justify-content-center">
+                    <h2 class="text-white">Qu'est ce que nos étudiants disent sur nous ?</h2>
+                    <p>
+                        Voici quelque mot de la part de nos étudiant en deuxième année.
+                    </p>
+                    <h2 class="display-5 mt-5">Et qu'attendez vous pour nous rejoindre ?</h2>
+                    <button class="btn btn-warning btn-started">Join now</button>
+                </div>
+                <div class="col col-12 col-md-8 text-black py-4">
+                    <div class="container carousel slide " data-ride="carousel" data-pause="false" data-interval="5000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-contenu position-relative w-75 mx-auto bg-white p-3">
+                                    <div class="d-flex justify-content-between">
+                                        <h2 class="text-warning">TEMOIGNAGE
+                                            <br>
+                                            <span class="text-black">D'ETUDIANTS</span>
+                                        </h2>
+                                        <span><i class="fa-solid fa-quote-right"></i></span>
+                                    </div>
+                                    <p>
+                                       "Les  ennsignants et le staff de HEI sont exigeants. Mais ils sont accessibles 
+                                       et ils nous accompagnent dans les difficultés. L'emploi du temps est relativement léger,
+                                       ce qui nous permet l'exercice d'autres activités à côté." 
+                                    </p>
+                                    <div class="d-flex flex-md-row flex-column justify-content-md-between align-items-center">
+                                        <div>
+                                            <h2 class="text-warning text-center mb-0">Mahefa</h2>
+                                            <p class="text-center">Deuxième année</p>
+                                        </div>
+                                        <img src="img/imagesHEI/MrYannick.jpeg" alt="mr yannick" class="rounded-circle">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-contenu position-relative w-75 mx-auto bg-white p-3">
+                                    <div class="d-flex justify-content-between">
+                                        <h2 class="text-warning">TEMOIGNAGE
+                                            <br>
+                                            <span class="text-black">D'ETUDIANTS</span>
+                                        </h2>
+                                        <span><i class="fa-solid fa-quote-right"></i></span>
+                                    </div>
+                                    <p>
+                                        "Aucun mot ne suffit pour décrirela superbe aventure vécue chez HEI."
+                                    </p>
+                                    <div class="d-flex flex-md-row flex-column justify-content-md-between align-items-center">
+                                        <div>
+                                            <h2 class="text-warning text-center mb-0">Ny Hasina</h2>
+                                            <p class="text-center">Deuxième année</p>
+                                        </div>
+                                        <img src="img/imagesHEI/MrYannick.jpeg" alt="mr yannick" class="rounded-circle">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-contenu position-relative w-75 mx-auto bg-white p-3">
+                                    <div class="d-flex justify-content-between">
+                                        <h2 class="text-warning">TEMOIGNAGE
+                                            <br>
+                                            <span class="text-black">D'ETUDIANTS</span>
+                                        </h2>
+                                        <span><i class="fa-solid fa-quote-right"></i></span>
+                                    </div>
+                                    <p>
+                                        "L'université m'a donné les outils nécessaires pour réussir dans ma carrière."
+                                    </p>
+                                    <div class="d-flex flex-md-row flex-column justify-content-md-between align-items-center">
+                                        <div>
+                                            <h2 class="text-warning text-center mb-0">Incognito</h2>
+                                            <p class="text-center">Deuxième Année</p>
+                                        </div>
+                                        <img src="img/imagesHEI/MrYannick.jpeg" alt="mr yannick" class="rounded-circle">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stat container my-5 p-0 bg-warning wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="50">
+            <div class="row row-cols-md-3 row-cols-1">
+                <div class="col">
+                    <div class="row row-cols-3 object-fit-cover">
+                        <div class="d-flex justify-content-center bg-white align-items-center  col p-0 icon">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                        <div class="col-2 text-white">
+                            <h2 class="font-weight-bold counter">555</h2>
+                            <p>Etudiants</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row row-cols-3 object-fit-cover">
+                        <div class="d-flex bg-white justify-content-center align-items-center col p-0 icon">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <div class="col-2 text-white">
+                            <h2 class="font-weight-bold counter">125</h2>
+                            <p>Partenaire</p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col">
+                    <div class="row row-cols-3 object-fit-cover">
+                        <div class="d-flex bg-white justify-content-center align-items-center col p-0 icon">
+                            <i class="fa fa-graduation-cap"></i>
+                        </div>
+                        <div class="col-2 text-white">
+                            <h2 class="font-weight-bold counter">600</h2>
+                            <p>Sortants</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of citation -->
+
+    <!-- start Contact Section -->
+    <section id="contact" class="bg-white container-fluid">
+        <h2 class="display-4 py-5 pb-3 text-center wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="50">NOTRE
+            <span class="text-warning">EMPLACEMENT</span></h2>
+        <div class="wow animate__fadeInUp" data-wow-duration="2500ms" data-wow-offset="50">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.367661934453!2d47.532541113947076!3d-18.87076378720597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f087ecae7cef27%3A0x73f917bb47615aa0!2sHaute%20%C3%89cole%20d&#39;Informatique%20-%20%5BHEI%5D!5e0!3m2!1sfr!2smg!4v1674907599422!5m2!1sfr!2smg"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div id="contactSection" class="row mt-5 wow animate__fadeIn" data-wow-duration="2500ms" data-wow-offset="100">
+            <div class="col col-12 col-md-4 text-center">
+                <div>
+                    <h5 class="font-weight-bold">Location:</h5>
+                    <p>II J 161 R Ambodivoanjo Ivandry Antananarivo, 101</p>
+                </div>
+                <div>
+                    <h5 class="font-weight-bold">Email:</h5>
+                    <p>contact@hei.school</p>
+                </div>
+                <div>
+                    <h5 class="font-weight-bold">Call:</h5>
+                    <p>034 94 041 16</p>
+                </div>
+            </div>
+            <div class="col col-12 col-md-8 mt-5 mt-md-0 p-2">
+                <form class="w-100 pb-5">
+                    <div class="d-flex w-100 justify-content-between">
+                        <input type="tel" class="d-block p-2" name="name" id="name" placeholder="Your Name" required>
+                        <input type="email" class="d-block p-2" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="my-3">
+                        <textarea class="p-2" name="message" id="message" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="d-flex p-0 align-items-center">
+                        <button class="btn btn-warning btn-send mr-3 d-block">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Contact Section -->
+    <footer class="bg-black text-white py-5 conatiner-fluid">
+        <div class="footer bg-muted container py-5  wow animate__fadeIn" data-wow-duration="2500ms" data-wow-offset="50">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12 col d-flex flex-column">
+                    <div class="w-100">
+                        <img src="img/imagesHEI/logo.png" alt="logo">
+                    </div>
+                    <div class="w-100 text-black d-flex align-items-center m-0 justify-content-between px-5">
+                        <span><i class="fab fa-facebook-f bg-white py-2 px-3 rounded-circle"></i></span>
+                        <span><i class="fab fa-instagram bg-white py-2 px-3 rounded-circle"></i></span>
+                        <span><i class="fab fa-twitter bg-white py-2 px-3 rounded-circle"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6 col my-2">
+                    <h6>A PROPOS</h6>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-chevron-right text-warning"></i>
+                            <a href="#" class="text-white">Home</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-chevron-right  text-warning"></i>
+                            <a href="#" class="text-white">Our features</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-chevron-right  text-warning"></i>
+                            <a href="#" class="text-white">Activity</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-chevron-right  text-warning"></i>
+                            <a href="#" class="text-white">Our team</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-chevron-right  text-warning"></i>
+                            <a href="#" class="text-white">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 col my-2">
+                    <h6>PARCOURS</h6>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-chevron-right  text-warning"></i>
+                            <a href="#" class="text-white">Ecosystèmes logiciels</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-chevron-right  text-warning"></i>
+                            <a href="#" class="text-white">Transformation Numeriques</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 col my-2 text-center text-md-left">
+                    <h6>NOUS REJOINDRE</h6>
+                    <p id="join">
+                        Inscrivez-vous sur le lien ci-dessous et nous vous informerons de la datede la prochaine
+                        rentrée.
+                    </p>
+                    <button class="btn btn-warning btn-started">Inscrivez-vous</button>
+                </div>
+            </div>
+        </div>
+        <div class="text-center container-fluid pt-3 wow animate__fadeIn" data-wow-duration="2s" data-wow-offset="50">
+            <span><i class="bi bi-c-circle"></i>Copyright <strong>TheCodeCrafters</strong>. All Rights Reserved</span>
+        </div>
+    </footer>
+</body>
+</html>

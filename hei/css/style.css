@@ -1,0 +1,366 @@
+/*-----------import-font-----------------*/
+@font-face {
+    font-family: myFont;
+    src: url("../../asserts/font/fa-brands-400.ttf");
+}
+
+/* ---------------header------------------ */
+header,
+header .carousel {
+    height: 100vh;
+}
+
+header .carousel-item {
+    height: 100vh !important;
+}
+
+.slide-element {
+    background-color: rgba(0, 0, 0, 0.432);
+    height: 100%;
+}
+
+.slide-1 {
+    background-image: url("../img/imagesHEI/slider-image3.jpg");
+    background-size: cover;
+}
+
+.slide-2 {
+    background-image: url("../img/imagesHEI/slider-image2.jpg");
+    background-size: cover;
+}
+
+.slide-3 {
+    background-image: url("../img/Journéed_intégration/lol.jpg");
+    background-size: cover;
+}
+
+.slide-element p {
+    font-size: 18px;
+}
+
+.slide-element button:hover {
+    background-color: rgb(218, 144, 8) !important;
+}
+
+.slide-element button {
+    background-color: rgb(161, 112, 21) !important;
+    font-size: 18px !important;
+    padding: 10px 20px !important;
+    transition: all 500ms;
+}
+
+/* HEI features */
+
+.featuring-contenu{
+    background-color: whitesmoke;
+    position: relative;
+    overflow: hidden;
+}
+
+.featuring-contenu span i{
+    font-size: 50px;
+}
+
+.featuring-contenu div{
+    z-index: 9999;
+    transition: all 700ms;
+}
+
+.featuring-contenu::after{
+    content: "";
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    transition: all 700ms;
+    background-color: rgb(206, 137, 9);
+}
+
+.featuring-contenu:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+.featuring-contenu:hover div{
+    color: white;
+}
+/* end of featuring */
+
+/* our works begin */
+
+.bg-warning {
+    background-color: rgb(243, 164, 18) !important;
+}
+
+.text-warning {
+    color: rgb(243, 164, 18);
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.text-blue {
+    color: rgb(25, 25, 206);
+}
+
+#stats-test {
+    background-color: black;
+}
+
+.fs-20 {
+    font-size: 22px;
+}
+
+.bg-dark {
+    background-color: rgba(0, 0, 0, 0.808) !important;
+}
+
+.icon {
+    width: 50px;
+    height: fit-cover;
+    background-color: white;
+}
+
+i {
+    display: block !important;
+    font-size: 60px;
+    width: fit-content;
+}
+/* ------------------------------------- */
+
+.gallery {
+    height: 250px !important;
+    background-size: cover;
+}
+
+.gallery-1 {
+    background-image: url("../img/img/gallery2.jpg");
+}
+
+.gallery-2 {
+    background-image: url("../img/img/gallery1.jpg");
+}
+
+.gallery-3 {
+    background-image: url("../img/img/gallery3.jpg");
+}
+
+.gallery-4 {
+    background-image: url("../img/img/gallery4.jpg");
+}
+
+.gallery-5 {
+    background-image: url("../img/img/gallery2.jpg");
+}
+
+.gallery-6 {
+    background-image: url("../img/img/gallery3.jpg");
+}
+
+.gallery h2 {
+    top: 20%;
+    width: 100%;
+}
+
+.gallery i {
+    font-size: 30px;
+}
+
+.contenu-lr {
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 0;
+    transition: all 500ms;
+}
+
+.text-black {
+    color: black !important;
+}
+
+.contenu-lr i:hover {
+    background-color: #fff !important;
+    transition: all 500ms;
+    color: black !important;
+    cursor: pointer;
+}
+
+/* end of our works */
+
+/* start of testimonials */
+
+img.profil{
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+/* end of start testimonials */
+
+/* start of contact */
+#contact div iframe{
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+#contact p{
+    color: rgba(0, 0, 0, 0.726);
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    outline: none;
+    width: 49%;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    display: block;
+    height: 150px;
+    outline:none;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+}
+
+/* end of contact */
+/* start of footer */
+/* footer */
+footer{
+    font-size: 14px;
+}
+.footer{
+    background: #151515;
+}
+footer img{
+    display: block;
+    width: 90%;
+    height: 150px;
+    margin: 0px;
+}
+footer i{
+    font-size: 20px !important;
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    transition:all 300ms;
+}
+ul li a:hover {
+    color: #d18c04 !important;
+    text-decoration: none;
+}
+
+ul li i{
+    font-size: 14px !important;
+    display: inline !important;
+}
+
+/* lou andria */
+.director{
+    background-image: linear-gradient(to bottom,rgb(126, 85, 8),rgb(223, 150, 15));
+}
+.director-img img{
+    display: block;
+    width: 300px !important;
+    height: 300px !important;
+}
+
+.bg-perso{
+    background-color: #7a580ed2;
+}
+.skill80{
+    width: 80%;
+    background-color: rgb(189, 123, 2);
+}
+.skill90{
+    width: 90%;
+    background-color: rgb(189, 123, 2);
+    
+}
+.skill99{
+    width: 99%;
+    background-color: rgb(189, 123, 2);
+}
+.skill95{
+    width: 95%;
+    background-color: rgb(189, 123, 2);
+}
+
+.last-info span i{
+    font-size: 35px !important;
+}
+
+#team img{
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+
+.teacherInfo{
+    height: 150px;
+    padding: 10px 0px;
+}
+
+.bg-perso2{
+    background-color: #d18c04;
+}
+
+#pricing p{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.836);
+}
+.bg-perso3{
+    background-color: rgb(230, 224, 224);
+}
+
+/* pricing */
+
+#pricing img{
+    width: 40%;
+    height: 200px;
+}
+.pricing-tag{
+    border-radius: 20px;
+}
+
+.pricing-tag-child{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.carousel-contenu::after{
+    content: "";
+    display: block;
+    transform: rotate(20deg);
+    border: 2px solid rgb(206, 137, 9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 2;
+}
+.carousel-contenu{
+    z-index: 99;
+}
+.carousel-contenu img{
+    width: 150px;
+    height: 150px;
+    border-top: 5px solid rgb(206, 137, 9);
+    border-left: 5px solid rgb(206, 137, 9);
+    border-bottom: 5px solid rgb(0, 0, 0);
+    border-right: 5px solid rgb(0, 0, 0);
+}
+    
+.carousel-contenu img,.carousel-contenu h2, .carousel-contenu p, .carousel-contenu span{
+    z-index: 99 !important;
+}
+
+#pricingBe .carousel-inner{
+    padding: 65px 50px !important;
+}

@@ -1,0 +1,82 @@
+nav .navbar-brand img{
+    width: 60px;
+    height: 50px;
+}
+
+.navbar-item span i{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navbar button{
+    z-index: 9999999;
+}
+/*-------------------------------*/
+
+header,.carousel{
+    height: 100vh;
+}
+.carousel-item{
+    height: 100vh !important;
+}
+
+.slide-element{
+    background-color: rgba(0, 0, 0, 0.432) !important;
+    height: 100%;
+}
+.slide-1{
+    background-image: url("../img/imagesHEI/slider-image3.jpg");
+    background-size: cover;
+}
+.slide-2{
+    background-image: url("../img/imagesHEI/slider-image2.jpg");
+    background-size: cover;
+}
+.slide-3{
+    background-image: url("../img/Journéed_intégration/lol.jpg");
+    background-size: cover;
+}
+
+.slide-element p{
+    font-size: 18px !important;
+}
+
+.slide-element button:hover{
+    background-color: rgb(199, 133, 10) !important;
+}
+
+.slide-element button{
+    background-color: rgb(161, 112, 21) !important;
+    font-size: 18px !important;
+    padding: 10px 20px !important;
+    transition: all 500ms;
+}
+
+.collapse{
+    position: absolute;
+    top:0px;
+    height: 100vh !important;
+}
+.collapsing{
+    left: -100%;
+    height: 100vh !important;
+    top: 0;
+    position: absolute !important;
+    transition:  none !important;
+}
+
+.navbar-collapse{
+    transition: all 1s;
+}
+
+.navbar-nav.show{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    height:100vh;
+    width:100% !important;
+    left: 0 !important;
+    top:0px;
+}
+
+/*-----------------------------------------------------*/
+
